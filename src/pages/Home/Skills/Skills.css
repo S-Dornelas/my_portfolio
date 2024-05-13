@@ -1,0 +1,9 @@
+.models-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: center;
+}
+
+.models-item {
+  margin: 0 10px; 
+}
