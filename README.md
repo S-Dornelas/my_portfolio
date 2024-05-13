@@ -23,7 +23,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 ### Clone o repositório:
 
 ### Acesse o diretório do projeto:
-git clone https://github.com/S-Dornelas/my-portfolio
+git clone https://github.com/S-Dornelas/my_portfolio.git
 
 
 ### Inicie o servidor de desenvolvimento:

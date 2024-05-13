@@ -5,9 +5,9 @@ import CardContent from '@mui/material/CardContent';
 import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Avatar from "../../../assets/images/Projeto_portfolio.jpg";
-import Avatar2 from "../../../assets/images/tabela.jpeg";
-import Avatar3 from "../../../assets/images/asp.png";
+import avatar from "@assets/images/projeto_portfolio.png";
+import avatar2 from "@assets/images/tabela.png";
+import avatar3 from "@assets/images/asp.png";
 
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
@@ -59,7 +59,7 @@ const Projects = () => {
                             <CardMedia
                                 component="img"
                                 height="200"
-                                image={Avatar}
+                                image={avatar}
                                 alt="Imagem_portifolio"
                             />
                             <CardContent>
@@ -80,7 +80,7 @@ const Projects = () => {
                             <CardMedia
                                 component="img"
                                 height="200"
-                                image={Avatar2}
+                                image={avatar2}
                                 alt="Imagem_portifolio"
                             />
                             <CardContent>
@@ -101,7 +101,7 @@ const Projects = () => {
                             <CardMedia
                                 component="img"
                                 height="200"
-                                image={Avatar3}
+                                image={avatar3}
                                 alt="Imagem_portifolio"
                             />
                             <CardContent>

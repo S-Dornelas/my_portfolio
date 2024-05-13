@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import Avatar from "../../assets/images/perfil.png";
-import { AnimatedBackground } from "../../../components/AnimateBackground/AnimacaoBackground";
+import perfil from "@assets/images/perfil.png";
+import { AnimatedBackground } from "@components/AnimateBackground/AnimacaoBackground";
 
 const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -48,7 +48,7 @@ const Hero = () => {
                                 <AnimatedBackground />
                             </Box>
                             <Box position="relative" textAlign="center">
-                                <StyledImg src={Avatar} alt="Avatar" />
+                                <StyledImg src={perfil} alt="Avatar" />
                             </Box>
                         </Box>
                     </Grid>
