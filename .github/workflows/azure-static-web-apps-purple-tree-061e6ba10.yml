@@ -20,7 +20,7 @@ jobs:
           submodules: true
           lfs: false
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           node-version: 20 # Use the same node.js version as the one Vercel's uses (currently node20.x)
       - name: Build And Deploy
