@@ -16,18 +16,33 @@ import "./Skills.css";
 
 const StyledSkills = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
-    minHeight: "40vh",
+    minHeight: "100vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    padding: theme.spacing(10),
+    padding: theme.spacing(5),
     [theme.breakpoints.up('sm')]: {
-        paddingTop: theme.spacing(15),
+        paddingTop: theme.spacing(10),
+        paddingLeft: theme.spacing(10),
+        paddingRight: theme.spacing(10),
     },
     [theme.breakpoints.up('md')]: {
         paddingTop: theme.spacing(10),
+        paddingLeft: theme.spacing(20),
+        paddingRight: theme.spacing(20),
     }
+}));
+
+const StyledTypography = styled(Typography)(({ theme }) => ({
+    maxWidth: '100%',
+    margin: 'auto',
+    [theme.breakpoints.up('sm')]: {
+        maxWidth: '80%',
+    },
+    [theme.breakpoints.up('md')]: {
+        maxWidth: '60%',
+    },
 }));
 
 const StyledModelsContainer = styled("div")({
@@ -44,10 +59,14 @@ const StyledModelsRow = styled("div")({
     gap: "20px",
 });
 
-const StyledModelsItem = styled("div")({
+const StyledModelsItem = styled("div")(({ theme }) => ({
     width: "150px",
     flex: "1 0 150px",
-});
+    [theme.breakpoints.down('sm')]: {
+        width: "100px",
+        flex: "1 0 100px",
+    }
+}));
 
 const Skills = () => {
     useEffect(() => {
@@ -66,11 +85,10 @@ const Skills = () => {
         }, {
             opacity: 1,
             y: 0,
-            stagger: 1, 
-            duration: 1 
+            stagger: 1,
+            duration: 1
         });
     }, []);
-    
 
     return (
         <StyledSkills id="skills">
@@ -78,9 +96,9 @@ const Skills = () => {
                 <Typography color="secondary" variant="h2" gutterBottom>
                     EXPERTISES
                 </Typography>
-                <Typography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
+                <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
                     Minhas habilidades foram adquiridas através de estudo e enfrentando desafios. Estou determinado a me tornar um desenvolvedor melhor a cada dia.
-                </Typography>
+                </StyledTypography>
                 <br />
                 <StyledModelsContainer className="models-container">
                     <StyledModelsRow className="models-row">

@@ -12,18 +12,33 @@ import avatar3 from "@assets/images/asp.png";
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
-        minHeight: "40vh",
+        minHeight: "100vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        padding: theme.spacing(10),
+        padding: theme.spacing(5),
         [theme.breakpoints.up('sm')]: {
-            paddingTop: theme.spacing(15),
+            paddingTop: theme.spacing(10),
+            paddingLeft: theme.spacing(10),
+            paddingRight: theme.spacing(10),
         },
         [theme.breakpoints.up('md')]: {
             paddingTop: theme.spacing(10),
+            paddingLeft: theme.spacing(20),
+            paddingRight: theme.spacing(20),
         }
+    }));
+
+    const StyledTypography = styled(Typography)(({ theme }) => ({
+        maxWidth: '100%',
+        [theme.breakpoints.up('sm')]: {
+            maxWidth: '80%',
+        },
+        [theme.breakpoints.up('md')]: {
+            maxWidth: '60%',
+        },
+        margin: 'auto',
     }));
 
     const StyledCard = styled(Card)(() => ({
@@ -42,13 +57,12 @@ const Projects = () => {
                 <Typography color="secondary" variant="h2" gutterBottom>
                     PROJETOS
                 </Typography>
-                <Typography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
-    Bem-vindo(a) ao meu espaço criativo! Aqui, cada projeto é uma oportunidade de fazer algo extraordinário. Para saber mais sobre meus projetos, confira meu 
-    <a href="https://github.com/S-Dornelas" target="_blank" rel="noopener noreferrer" style={{ color: 'secondary.contrastText', textDecoration: 'none' }}> GitHub</a>.
-</Typography>
-
-                            <br/>
-                <Grid container spacing={3} >
+                <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
+                    Bem-vindo(a) ao meu espaço criativo! Aqui, cada projeto é uma oportunidade de fazer algo extraordinário. Para saber mais sobre meus projetos, confira meu 
+                    <a href="https://github.com/S-Dornelas" target="_blank" rel="noopener noreferrer" style={{ color: 'secondary.contrastText', textDecoration: 'none' }}> GitHub</a>.
+                </StyledTypography>
+                <br/>
+                <Grid container spacing={3}>
                     {/** Card 1 */}
                     <Grid item xs={12} md={4}>
                         <StyledCard>
@@ -96,7 +110,7 @@ const Projects = () => {
                         <StyledCard>
                             <CardHeader
                                 title="ASP.NET Aplicação Completa"
-                                subheader="17 de abril de 2024"
+                                subheader="17 de maio de 2023"
                             />
                             <CardMedia
                                 component="img"

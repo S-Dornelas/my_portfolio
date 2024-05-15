@@ -51,7 +51,7 @@ const Contacts = () => {
     };
 
     return (
-        <div id="contacts" style={{ backgroundColor: "#232323", minHeight: "60vh", paddingTop: "32px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        <div id="contacts" style={{ backgroundColor: "#232323", minHeight: "60vh", paddingTop: "32px", paddingBottom: "32px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
             <Container maxWidth="lg">
                 <Typography color="secondary" variant="h2" textAlign="center" gutterBottom>
                     CONTATOS
@@ -61,9 +61,9 @@ const Contacts = () => {
                 </Typography>
                 <br />
                 {error && <Alert severity="error">{error}</Alert>}
-{successMessage && <Alert severity="success">{successMessage}</Alert>}
+                {successMessage && <Alert severity="success">{successMessage}</Alert>}
 
-                <Grid container spacing={1} justifyContent="center">
+                <Grid container spacing={3} justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
                         <form noValidate autoComplete="off" onSubmit={sendEmail}>
                             <TextField
@@ -121,22 +121,29 @@ const Contacts = () => {
                                 variant="contained"
                                 color="secondary"
                                 fullWidth
+                                sx={{ mt: 2 }}
                             >
                                 Enviar Mensagem
                             </Button>
                         </form>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="center" style={{ marginTop: '20px' }}>
-                    <Link href="https://github.com/S-Dornelas" target="_blank" rel="noopener noreferrer" sx={{ marginLeft: '10px', color: 'white', textDecoration: 'none' }}>
-                        <GitHubIcon sx={{ fontSize: 30 }} />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/sandrodornelas/" target="_blank" rel="noopener noreferrer" sx={{ marginLeft: '10px', color: 'white', textDecoration: 'none' }}>
-                        <LinkedInIcon sx={{ fontSize: 30 }} />
-                    </Link>
-                    <Link href="https://wa.me/5581994332276" target="_blank" rel="noopener noreferrer" sx={{ marginLeft: '10px', color: 'white', textDecoration: 'none' }}>
-                        <WhatsAppIcon sx={{ fontSize: 30 }} />
-                    </Link>
+                <Grid container justifyContent="center" spacing={2} style={{ marginTop: '20px' }}>
+                    <Grid item>
+                        <Link href="https://github.com/S-Dornelas" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', textDecoration: 'none' }}>
+                            <GitHubIcon sx={{ fontSize: 30 }} />
+                        </Link>
+                    </Grid>
+                    <Grid item>
+                        <Link href="https://www.linkedin.com/in/sandrodornelas/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', textDecoration: 'none' }}>
+                            <LinkedInIcon sx={{ fontSize: 30 }} />
+                        </Link>
+                    </Grid>
+                    <Grid item>
+                        <Link href="https://wa.me/5581994332276" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', textDecoration: 'none' }}>
+                            <WhatsAppIcon sx={{ fontSize: 30 }} />
+                        </Link>
+                    </Grid>
                 </Grid>
             </Container>
         </div>
