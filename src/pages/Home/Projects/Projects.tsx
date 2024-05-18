@@ -77,7 +77,7 @@ const Projects = () => {
                                 alt="Imagem_portifolio"
                             />
                             <CardContent>
-                                <a href="https://github.com/S-Dornelas/my-portfolio" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+                                <a href="https://github.com/S-Dornelas/my_portfolio" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
                                     <GitHubIcon />
                                 </a>
                             </CardContent>
