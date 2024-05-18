@@ -9,7 +9,7 @@ const About = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        padding: theme.spacing(5),
+        padding: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             paddingTop: theme.spacing(10),
             paddingLeft: theme.spacing(10),
