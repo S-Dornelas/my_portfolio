@@ -38,10 +38,10 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     maxWidth: '100%',
     margin: 'auto',
     [theme.breakpoints.up('sm')]: {
-        maxWidth: '80%',
+        maxWidth: '100%',
     },
     [theme.breakpoints.up('md')]: {
-        maxWidth: '60%',
+        maxWidth: '100%',
     },
 }));
 
@@ -49,7 +49,7 @@ const StyledModelsContainer = styled("div")({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    gap: "20px",
+    gap: "50px",
 });
 
 const StyledModelsRow = styled("div")({

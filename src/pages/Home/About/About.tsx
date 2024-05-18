@@ -33,10 +33,10 @@ const About = () => {
         maxWidth: '100%',
         margin: 'auto',
         [theme.breakpoints.up('sm')]: {
-            maxWidth: '80%',
+            maxWidth: '60%',
         },
         [theme.breakpoints.up('md')]: {
-            maxWidth: '60%',
+            maxWidth: '100%',
         },
     }));
 

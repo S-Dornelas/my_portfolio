@@ -25,27 +25,27 @@ const Projects = () => {
         },
         [theme.breakpoints.up('md')]: {
             paddingTop: theme.spacing(10),
-            paddingLeft: theme.spacing(20),
-            paddingRight: theme.spacing(20),
+            paddingLeft: theme.spacing(10),
+            paddingRight: theme.spacing(10),
         }
     }));
 
     const StyledTypography = styled(Typography)(({ theme }) => ({
         maxWidth: '100%',
         [theme.breakpoints.up('sm')]: {
-            maxWidth: '80%',
+            maxWidth: '100%',
         },
         [theme.breakpoints.up('md')]: {
-            maxWidth: '60%',
+            maxWidth: '100%',
         },
         margin: 'auto',
     }));
 
     const StyledCard = styled(Card)(() => ({
-        maxWidth: 345,
+        maxWidth: 400,
         transition: 'transform 0.5s ease-in-out, box-shadow 0.2s ease-in-out',
         '&:hover': {
-            transform: 'scale(1.05)',
+            transform: 'scale(1.1)',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
         },
         backgroundColor: '#696969', 
@@ -109,7 +109,7 @@ const Projects = () => {
                     <Grid item xs={12} md={4}>
                         <StyledCard>
                             <CardHeader
-                                title="ASP.NET Aplicação Completa"
+                                title="ASP.NET Camadas"
                                 subheader="17 de maio de 2023"
                             />
                             <CardMedia

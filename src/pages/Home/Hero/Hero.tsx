@@ -45,10 +45,10 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
     maxWidth: '100%',
     margin: 'auto',
     [theme.breakpoints.up('sm')]: {
-        maxWidth: '80%',
+        maxWidth: '100%',
     },
     [theme.breakpoints.up('md')]: {
-        maxWidth: '90%',
+        maxWidth: '100%',
     },
 }));
 
