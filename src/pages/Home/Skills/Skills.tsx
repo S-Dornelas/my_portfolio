@@ -7,6 +7,7 @@ import JSImage from "../../../assets/images/javascript.png";
 import TSImage from "../../../assets/images/typescript.png";
 import CssImage from "../../../assets/images/css.png";
 import HtmlImage from "../../../assets/images/html.png";
+import az900 from "../../../assets/images/az900.png";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -56,16 +57,33 @@ const StyledModelsRow = styled("div")({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    gap: "20px",
+    gap: "30px",  // Diminuir a distância entre os itens
 });
 
 const StyledModelsItem = styled("div")(({ theme }) => ({
     width: "150px",
     flex: "1 0 150px",
+    display: "flex",
+    justifyContent: "center", // Alinha as imagens no centro
     [theme.breakpoints.down('sm')]: {
         width: "100px",
         flex: "1 0 100px",
+    },
+    img: {
+        borderRadius: "12px",  // Bordas arredondadas nas imagens
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Adiciona sombra sutil
+        transition: "transform 0.3s ease",  // Animação suave ao passar o mouse
+        "&:hover": {
+            transform: "scale(1.1)",  // Aumenta a imagem ao passar o mouse
+        }
     }
+}));
+
+const StyledCode = styled("code")(({ theme }) => ({
+    color: theme.palette.secondary.main,
+    padding: "2px 5px",
+    borderRadius: "5px",
+    fontWeight: "bold",
 }));
 
 const Skills = () => {
@@ -76,7 +94,7 @@ const Skills = () => {
                 trigger: ".models-container",
                 scrub: true,
                 start: "top 900px",
-                end: "bottom 700px"
+                end: "bottom 600px"
             }
         })
         .fromTo(".models-item", {
@@ -97,7 +115,7 @@ const Skills = () => {
                     EXPERTISES
                 </Typography>
                 <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
-                    Minhas habilidades foram adquiridas através de estudo e enfrentando desafios. Estou determinado a me tornar um desenvolvedor melhor a cada dia.
+                    Minhas habilidades foram construídas por meio de estudos contínuos e superação de desafios. Sou determinado a evoluir como desenvolvedor a cada dia, buscando sempre ampliar meu conhecimento e aperfeiçoar minhas competências.
                 </StyledTypography>
                 <br />
                 <StyledModelsContainer className="models-container">
@@ -130,6 +148,18 @@ const Skills = () => {
                         </StyledModelsItem>
                     </StyledModelsRow>
                 </StyledModelsContainer>
+                <br />
+                <br />
+                <StyledModelsRow className="models-row" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+                    <StyledModelsItem className="models-item" style={{ flex: "1" }}>
+                        <a href="https://learn.microsoft.com/pt-br/users/sandrodornelas-8959/credentials/10cd2350a1669b45?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+                            <img title="Clique para visualizar Certificado AZ900" src={az900} alt="az900" style={{ maxWidth: "40%" }} />
+                        </a>
+                    </StyledModelsItem>
+                    <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom style={{ flex: "2" }}>
+                        Com a certificação <StyledCode>Microsoft Certified: Azure Fundamentals</StyledCode> estou preparado para integrar tecnologias de nuvem em projetos, contribuindo para o desenvolvimento de soluções inovadoras e de alto impacto.
+                    </StyledTypography>
+                </StyledModelsRow>
             </Container>
         </StyledSkills>
     );

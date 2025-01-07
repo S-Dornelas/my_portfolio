@@ -12,7 +12,7 @@ import avatar3 from "@assets/images/asp.png";
 const Projects = () => {
     const StyledProjects = styled("div")(({ theme }) => ({
         backgroundColor: theme.palette.primary.main,
-        minHeight: "100vh",
+        minHeight: "80vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -48,7 +48,7 @@ const Projects = () => {
             transform: 'scale(1.1)',
             boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
         },
-        backgroundColor: '#696969', 
+        backgroundColor: '#696969',
     }));
 
     return (
@@ -58,7 +58,7 @@ const Projects = () => {
                     PROJETOS
                 </Typography>
                 <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
-                    Bem-vindo(a) ao meu espaço criativo! Aqui, cada projeto é uma oportunidade de fazer algo extraordinário. Para saber mais sobre meus projetos, confira meu 
+                    Bem-vindo(a) ao meu espaço criativo! Aqui, cada projeto é uma oportunidade de fazer algo extraordinário. Para saber mais sobre meus projetos, confira meu
                     <a href="https://github.com/S-Dornelas" target="_blank" rel="noopener noreferrer" style={{ color: 'secondary.contrastText', textDecoration: 'none' }}> GitHub</a>.
                 </StyledTypography>
                 <br/>
@@ -88,7 +88,7 @@ const Projects = () => {
                     <Grid item xs={12} md={4}>
                         <StyledCard>
                             <CardHeader
-                                title="Importação de Tabelas"
+                                title="Importar Tabelas"
                                 subheader="1 de março de 2024"
                             />
                             <CardMedia
@@ -109,7 +109,7 @@ const Projects = () => {
                     <Grid item xs={12} md={4}>
                         <StyledCard>
                             <CardHeader
-                                title="ASP.NET Camadas"
+                                title="ASP.NET"
                                 subheader="17 de maio de 2023"
                             />
                             <CardMedia

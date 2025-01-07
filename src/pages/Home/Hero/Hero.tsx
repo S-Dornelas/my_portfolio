@@ -9,7 +9,7 @@ import { AnimatedBackground } from "@components/AnimateBackground/AnimacaoBackgr
 
 const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
-    minHeight: "100vh",
+    minHeight: "80vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -42,7 +42,7 @@ const StyledCode = styled("code")(({ theme }) => ({
 }));
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
-    maxWidth: '100%',
+    maxWidth: '80%',
     margin: 'auto',
     [theme.breakpoints.up('sm')]: {
         maxWidth: '100%',
