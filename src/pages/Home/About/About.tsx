@@ -49,15 +49,27 @@ const About = () => {
                             QUEM É SANDRO?
                         </Typography>
                         <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom>
-                        Sou formado em <StyledCode>Análise e Desenvolvimento de Sistemas</StyledCode> e tenho grande paixão pela <StyledCode>tecnologia</StyledCode>. Como <StyledCode>desenvolvedor</StyledCode>, estou constantemente me aprimorando nas áreas de <StyledCode>desenvolvimento de software</StyledCode>, <StyledCode>manutenção de sistemas</StyledCode>, <StyledCode>desenvolvimento web</StyledCode>, <StyledCode>gestão de bancos de dados</StyledCode> e <StyledCode>tecnologias de nuvem</StyledCode>.
+                        Sou formado em <StyledCode>Análise e Desenvolvimento de Sistemas</StyledCode>. Como desenvolvedor, estou continuamente me aprimorando em áreas
+                        como <StyledCode>desenvolvimento de software</StyledCode>, <StyledCode>manutenção de sistemas</StyledCode>,
+                         <StyledCode>desenvolvimento web</StyledCode>, <StyledCode>gestão de bancos de dados</StyledCode> e <StyledCode>tecnologias de nuvem</StyledCode>.
+                         Minhas contribuições incluem a criação e implementação de novas funcionalidades,
+                         a resolução de problemas técnicos, a realização de manutenção preventiva, a correção de
+                         bugs e a elaboração de documentação técnica, sempre com foco na qualidade do código e na
+                         eficiência dos processos.
                         <br></br>
-                        Contribuo para a criação e implementação de novas <StyledCode>funcionalidades</StyledCode>, resolvo <StyledCode>problemas técnicos</StyledCode>, faço <StyledCode>manutenção preventiva</StyledCode>, corrijo <StyledCode>bugs</StyledCode> e ajudo na elaboração de <StyledCode>documentação técnica</StyledCode> para o software, sempre visando a qualidade de código e a eficiência de processos.
                         <br></br>
-                        Tenho me dedicado ao aprimoramento, o que me permite desenvolver soluções criativas para problemas complexos, contribuindo para a criação e implementação de novas <StyledCode>funcionalidades</StyledCode>, além de participar ativamente na resolução de incidentes, otimização de performance e <StyledCode>gerenciamento de versões</StyledCode>, assim como ajudar a criar <StyledCode>documentação técnica</StyledCode> para o software. Minha experiência com <StyledCode>tecnologias de nuvem</StyledCode>, como <StyledCode>Azure</StyledCode>, me capacitou a criar soluções escaláveis e otimizar processos em ambientes distribuídos.
+                        Minha dedicação ao aprendizado constante me permite desenvolver soluções criativas para problemas
+                        complexos. Minha paixão por tecnologia e minha capacidade de aprendizado rápido me impulsionam a
+                        explorar novas ferramentas e metodologias, aprimorando constantemente minhas habilidades.
                         <br></br>
-                        Minha capacidade de aprendizado rápido e minha paixão pela <StyledCode>tecnologia</StyledCode> me incentiva a buscar sempre novas formas de aprimorar minhas expertises técnicas.
                         <br></br>
-                        Além das minhas habilidades técnicas, também sou uma pessoa <StyledCode>orientada para resultados</StyledCode>, <StyledCode>autodidata</StyledCode>, que se <StyledCode>adapta facilmente a novos desafios</StyledCode>. Sou conhecido por ser proativo, dedicado, focado e calmo, com habilidades analíticas e de resolução de problemas, o que me permite enfrentar desafios complexos de forma eficaz e entregar resultados consistentes.</StyledTypography>
+                        Além das competências técnicas, sou uma pessoa <StyledCode>orientada para resultados</StyledCode>,
+                        <StyledCode>autodidata</StyledCode> e <StyledCode>adaptável a novos desafios</StyledCode>.
+                        Sou reconhecido por minha <StyledCode>proatividade</StyledCode>, <StyledCode>dedicação</StyledCode>,
+                         <StyledCode>foco</StyledCode> e <StyledCode>calma</StyledCode> ao lidar com situações desafiadoras.
+                         Minhas habilidades analíticas e minha abordagem estruturada para a resolução de problemas me capacitam a enfrentar obstáculos complexos e entregar
+                        resultados consistentes e de alta qualidade.</StyledTypography>
+
                     </Grid>
                 </Grid>
             </Container>

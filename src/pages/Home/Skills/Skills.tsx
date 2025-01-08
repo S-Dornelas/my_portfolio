@@ -57,24 +57,23 @@ const StyledModelsRow = styled("div")({
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    gap: "30px",  // Diminuir a distância entre os itens
+    gap: "30px",
 });
 
 const StyledModelsItem = styled("div")(({ theme }) => ({
     width: "150px",
     flex: "1 0 150px",
     display: "flex",
-    justifyContent: "center", // Alinha as imagens no centro
+    justifyContent: "center",
     [theme.breakpoints.down('sm')]: {
         width: "100px",
         flex: "1 0 100px",
     },
     img: {
-        borderRadius: "12px",  // Bordas arredondadas nas imagens
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Adiciona sombra sutil
-        transition: "transform 0.3s ease",  // Animação suave ao passar o mouse
+        borderRadius: "12px",
+        transition: "transform 0.3s ease",
         "&:hover": {
-            transform: "scale(1.1)",  // Aumenta a imagem ao passar o mouse
+            transform: "scale(1.1)",
         }
     }
 }));
@@ -150,14 +149,21 @@ const Skills = () => {
                 </StyledModelsContainer>
                 <br />
                 <br />
+                <Typography color="secondary" variant="h2" gutterBottom>
+                    CERTIFICAÇÃO
+                </Typography>
                 <StyledModelsRow className="models-row" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
                     <StyledModelsItem className="models-item" style={{ flex: "1" }}>
                         <a href="https://learn.microsoft.com/pt-br/users/sandrodornelas-8959/credentials/10cd2350a1669b45?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
                             <img title="Clique para visualizar Certificado AZ900" src={az900} alt="az900" style={{ maxWidth: "40%" }} />
                         </a>
                     </StyledModelsItem>
-                    <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom style={{ flex: "2" }}>
-                        Com a certificação <StyledCode>Microsoft Certified: Azure Fundamentals</StyledCode> estou preparado para integrar tecnologias de nuvem em projetos, contribuindo para o desenvolvimento de soluções inovadoras e de alto impacto.
+                    <StyledTypography color="primary.contrastText" variant="body2" textAlign="justify" gutterBottom style={{ flex: "2" }}>
+                        <StyledTypography color="primary.contrastText" variant="h6" textAlign="justify" gutterBottom style={{ flex: "2" }}>
+                            <a href="https://learn.microsoft.com/pt-br/users/sandrodornelas-8959/credentials/10cd2350a1669b45?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer" style={{ color: 'secondary.contrastText', textDecoration: 'none' }}> <StyledCode>Microsoft Certified: Azure Fundamentals</StyledCode></a>.
+                        </StyledTypography>
+                        Com a certificação AZ-900 estou preparado para integrar tecnologias de nuvem em projetos,
+                        contribuindo para o desenvolvimento de soluções inovadoras e de alto impacto.
                     </StyledTypography>
                 </StyledModelsRow>
             </Container>
