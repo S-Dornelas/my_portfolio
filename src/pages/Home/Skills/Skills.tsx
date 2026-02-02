@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Csharp from "../../../assets/images/csharp.png";
+import servicenow from "../../../assets/images/servicenow.png";
 import ReactImage from "../../../assets/images/react.png";
 import PHPImage from "../../../assets/images/php.png";
 import BDImage from "../../../assets/images/bd.png";
@@ -118,7 +119,10 @@ const Skills = () => {
                 </StyledTypography>
                 <br />
                 <StyledModelsContainer className="models-container">
-                    <StyledModelsRow className="models-row">
+                    <StyledModelsRow className="models-row">                        
+                        <StyledModelsItem className="models-item">
+                            <img src={servicenow} alt="servicenow" style={{ maxWidth: "100%" }} />
+                        </StyledModelsItem>
                         <StyledModelsItem className="models-item">
                             <img src={Csharp} alt="csharp" style={{ maxWidth: "100%" }} />
                         </StyledModelsItem>
